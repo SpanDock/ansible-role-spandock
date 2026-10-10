@@ -2,6 +2,22 @@
 
 An Ansible role that installs a [SpanDock](https://www.spandock.com) server (a hub, or a satellite that joins one) as a systemd service, with the `spandock` command for its CLI.
 
+## Install
+
+```sh
+ansible-galaxy role install spandock.server
+```
+
+Or pin it in `requirements.yml` and run `ansible-galaxy install -r requirements.yml`:
+
+```yaml
+roles:
+  - name: spandock.server
+    version: v1.0.0
+```
+
+## Use
+
 ```yaml
 - hosts: spandock
   become: true
